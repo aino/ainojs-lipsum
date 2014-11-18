@@ -60,7 +60,7 @@ module.exports = {
     return text.replace(/^\s+|\s+$/g, '')
   },
 
-  sentences: function( min, max ) {
+  sentence: function( min, max ) {
     min = min || 8
 
     if ( min < 1 )
