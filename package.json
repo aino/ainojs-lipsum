@@ -1,0 +1,21 @@
+{
+  "name": "ainojs-lipsum",
+  "version": "1.0.0",
+  "description": "Generate lorem lipsums",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aino/ainojs-lipsum"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aino/ainojs-lipsum/issues"
+  },
+  "homepage": "https://github.com/aino/ainojs-lipsum",
+  "main": "lipsum.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aino",
+  "devDependencies": {},
+  "dependencies": {}
+}
