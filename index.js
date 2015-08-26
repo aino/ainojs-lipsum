@@ -76,7 +76,9 @@ module.exports = {
     while( min-- )
       text += word() + (( comma && comma === min ) ? ', ' : ' ')
 
-    return text.replace(/\s+/,' ').replace(/[^\d]$/, '') + '.'
+    console.log('text before parse', text)
+
+    return text.replace(/\s+/,' ').replace(/[\,\s]$/, '') + '.'
   },
 
   paragraphs: function( min, max ) {
