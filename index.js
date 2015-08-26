@@ -70,13 +70,11 @@ module.exports = {
     if ( typeof max == 'number' )
       min = range(min, max)
 
-    var text = capitalize( word() )
+    var text = capitalize( word() ) + ' '
     var comma = rand(2) ? rand( min-1 ) : false
 
     while( min-- )
       text += word() + (( comma && comma === min ) ? ', ' : ' ')
-
-    console.log('text before parse', text)
 
     return text.replace(/\s+/,' ').replace(/[\,\s]$/, '') + '.'
   },
