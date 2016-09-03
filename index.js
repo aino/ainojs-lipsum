@@ -84,7 +84,7 @@ module.exports = {
       return ''
 
     if ( min < 8 )
-      return this.sentences( min )
+      return this.sentence( min )
 
     if ( typeof max == 'number' )
       min = range(min, max)
@@ -94,10 +94,10 @@ module.exports = {
     var text = ''
 
     while( sentences-- )
-      text += this.sentences( 8 ) + ' '
+      text += this.sentence( 8 ) + ' '
 
     if ( rest )
-      return text + this.sentences(rest)
+      return text + this.sentence(rest)
     else
       return text.substr(0, text.length-2)
   }
